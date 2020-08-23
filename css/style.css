@@ -1134,6 +1134,11 @@ i:before {
   margin-bottom: 50px;
 }
 
+.text_event_box {
+ width: 400px;
+ text-align: left;
+}
+
 .event_box {
   display: flex;
   flex-direction: column;
