@@ -1185,6 +1185,11 @@ i:before {
   font-weight: 100;
 }
 
+.calendar_container {
+  width: 100vw;
+  overflow-x: scroll;
+}
+
 
 .calendar_header {
   margin-left: 6vw;
@@ -1196,18 +1201,19 @@ i:before {
 
 .days_of_week {
   margin-top: 40px;
-  width: 90vw;
-  margin-left: 6vw;
+  width: 1260px;
+  margin-left: 5vw;
   height: 40px;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   border-style: solid;
   border-width: 0px 1px 0px 0px;
   border-color: black;
 }
 
 .day {
-  flex-basis: 100%;
+  width: 180px;
   padding: 8px;
   border-style: solid;
   border-width: 1px 0px 0px 1px;
@@ -1216,8 +1222,8 @@ i:before {
 }
 
 .dph_container {
-  width: 90vw;
-  margin-left: 6vw;
+  width: 1260px;
+  margin-left: 5vw;
   margin-bottom: 40px;
   height: 200px;
   display: flex;
@@ -1229,7 +1235,7 @@ i:before {
 }
 
 .dph_box {
-  flex-basis: 100%;
+  width: 180px;
   padding: 8px;
   border-style: solid;
   border-width: 1px 0px 1px 1px;
