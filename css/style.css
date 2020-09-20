@@ -1185,6 +1185,62 @@ i:before {
   font-weight: 100;
 }
 
+
+.calendar_header {
+  margin-left: 6vw;
+  margin-top: 40px;
+  width: 90vw;
+  text-align: center;
+}
+
+
+.days_of_week {
+  margin-top: 40px;
+  width: 90vw;
+  margin-left: 6vw;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 0px 1px 0px 0px;
+  border-color: black;
+}
+
+.day {
+  flex-basis: 100%;
+  padding: 8px;
+  border-style: solid;
+  border-width: 1px 0px 0px 1px;
+  border-color: black;
+  height: 40px;
+}
+
+.dph_container {
+  width: 90vw;
+  margin-left: 6vw;
+  margin-bottom: 40px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 0px 1px 0px 0px;
+  border-color: black;
+
+}
+
+.dph_box {
+  flex-basis: 100%;
+  padding: 8px;
+  border-style: solid;
+  border-width: 1px 0px 1px 1px;
+  border-color: black;
+  height: 200px;
+}
+
+.dph_date {
+  font-size: 30px;
+}
+
 .mileston_area {
   padding-bottom: 100px;
 }
