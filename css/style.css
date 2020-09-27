@@ -715,6 +715,12 @@ i:before {
   text-align: center;
 }
 
+.constitution {
+  width: 100vw;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 /* End Feature Area css
 ============================================================================================ */
 /* Team People Area css
