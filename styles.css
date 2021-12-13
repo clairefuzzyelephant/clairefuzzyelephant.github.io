@@ -76,7 +76,7 @@
     margin-left: 25vw;
     text-overflow: wrap;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 iframe {
@@ -87,4 +87,31 @@ iframe {
 a {
     text-decoration: none;
     color:rgb(97, 68, 157);
+}
+
+iframe {
+    width: 40vw;
+    height: calc(40vw * 0.5625);
+}
+
+@media (max-width: 400px) {
+    iframe {
+        width: 50vw;
+        height: calc(50vw * 0.5625);
+    }
+}
+
+.navbar-music {
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+    left: 0;
+    top: 0;
+    padding-top: 3vh;
+}
+
+.navbar-music a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(184, 50, 168);
 }
