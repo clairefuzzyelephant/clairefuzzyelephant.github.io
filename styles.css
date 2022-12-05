@@ -1,3 +1,8 @@
+html {
+    background: linear-gradient(rgb(255, 255, 255), rgb(249, 220, 193), rgb(230, 203, 255), rgb(255, 255, 255));
+    height: 100vh;
+}
+
 .home-title {
     font-size: 40px;
     font-family: 'Fira Code', monospace;
@@ -42,7 +47,7 @@
     text-align: center;
     left: 0;
     top: 0;
-    padding-top: 20vh;
+    padding-top: 15vh;
 }
 
 
@@ -57,6 +62,11 @@
     color: rgb(28, 28, 28);
 }
 
+a.highlighted-link {
+    color: rgb(133, 85, 211);
+    
+}
+
 .footer {
     width: 100vw;
     text-align: center;
@@ -66,20 +76,30 @@
 }
 
 .home-content {
-    width: 50vw;
-    margin-left: 25vw;
+    width: 60vw;
+    margin-left: calc(20vw - 20px);
+    margin-top: 5vh;
     text-overflow: wrap;
     text-align: center;
-    padding-top: 40px;
+    padding: 0px 20px 40px 20px;
+    max-height: 45vh;
+    overflow-y: scroll;
 }
 
 
 .thingsido-section {
-    width: 50vw;
-    margin-left: 25vw;
+    padding-bottom: 20px;
+}
+
+.music-content {
+    width: 60vw;
+    margin-left: calc(20vw - 20px);
+    margin-top: 3vh;
     text-overflow: wrap;
     text-align: center;
-    padding-top: 40px;
+    padding: 0px 20px 40px 20px;
+    max-height: 40vh;
+    overflow-y: scroll;
 }
 
 iframe {
@@ -106,33 +126,39 @@ iframe {
 
 .navbar-music {
     width: 100vw;
-    height: 5vh;
+    height: 20px;
     text-align: center;
     left: 0;
     top: 0;
-    padding-top: 5vh;
+    padding-top: 15px;
+}
+
+.navbar-music a.highlighted-link {
+    color: rgb(184, 50, 168);
 }
 
 .navbar-music a {
     text-decoration: none;
     padding: 10px;
-    color: rgb(184, 50, 168);
+    color: rgb(223, 159, 205);
 }
+
+
 
 @media (max-width: 700px) {
     .navbar {
         width: 100vw;
         height: 10vh;
-        text-align: center;
+        /* text-align: center; */
         left: 0;
         top: 0;
         padding-top: 15vh;
-        padding-bottom: 5vh;
+        padding-bottom: 10px;
     }
     .navbar-items {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 10px 60px;
+        padding: 10px 80px 10px 60px;
     }
     .navbar a {
         text-decoration: none;
@@ -141,32 +167,45 @@ iframe {
 
     .home-content {
         width: 70vw;
-        margin-left: 15vw;
+        margin-left: calc(15vw - 20px);
         text-overflow: wrap;
         text-align: center;
-        padding-top: 25px;
+        padding: 0px 20px 40px 20px;
+        max-height: 45vh;
+        overflow-y: scroll;
     }
-    .thingsido-section {
+
+    .music-content {
         width: 70vw;
-        margin-left: 15vw;
+        margin-left: calc(15vw - 20px);
+        margin-top: 3vh;
         text-overflow: wrap;
         text-align: center;
-        padding-top: 25px;
+        padding: 0px 20px 40px 20px;
+        max-height: 35vh;
+        overflow-y: scroll;
+    }
+
+    .thingsido-section {
+        padding-bottom: 25px;
     }
     .navbar-music {
         width: 100vw;
-        height: 5vh;
+        height: 15px;
         text-align: center;
         left: 0;
         top: 0;
-        padding-top: 5px;
-        padding-bottom: -10px;
+        margin-top: 15px;
+    }
+
+    .navbar-music a.highlighted-link {
+        color: rgb(184, 50, 168);
     }
     
     .navbar-music a {
         text-decoration: none;
         padding: 5px;
-        color: rgb(184, 50, 168);
+        color: rgb(223, 159, 205);
     }
 
     
