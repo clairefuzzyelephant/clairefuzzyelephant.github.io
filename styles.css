@@ -45,6 +45,8 @@
     padding-top: 20vh;
 }
 
+
+
 .navbar-items {
     padding: 10px;
 }
@@ -60,6 +62,7 @@
     text-align: center;
     padding-top: 5vh;
     padding-bottom: 5vh;
+    height: 100px;
 }
 
 .home-content {
@@ -67,7 +70,7 @@
     margin-left: 25vw;
     text-overflow: wrap;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 
@@ -76,7 +79,7 @@
     margin-left: 25vw;
     text-overflow: wrap;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 iframe {
@@ -96,8 +99,8 @@ iframe {
 
 @media (max-width: 400px) {
     iframe {
-        width: 50vw;
-        height: calc(50vw * 0.5625);
+        width: 60vw;
+        height: calc(60vw * 0.5625);
     }
 }
 
@@ -114,4 +117,57 @@ iframe {
     text-decoration: none;
     padding: 10px;
     color: rgb(184, 50, 168);
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        width: 100vw;
+        height: 10vh;
+        text-align: center;
+        left: 0;
+        top: 0;
+        padding-top: 15vh;
+        padding-bottom: 5vh;
+    }
+    .navbar-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px 60px;
+    }
+    .navbar a {
+        text-decoration: none;
+        padding: 4px;
+    }
+
+    .home-content {
+        width: 70vw;
+        margin-left: 15vw;
+        text-overflow: wrap;
+        text-align: center;
+        padding-top: 25px;
+    }
+    .thingsido-section {
+        width: 70vw;
+        margin-left: 15vw;
+        text-overflow: wrap;
+        text-align: center;
+        padding-top: 25px;
+    }
+    .navbar-music {
+        width: 100vw;
+        height: 5vh;
+        text-align: center;
+        left: 0;
+        top: 0;
+        padding-top: 5px;
+        padding-bottom: -10px;
+    }
+    
+    .navbar-music a {
+        text-decoration: none;
+        padding: 5px;
+        color: rgb(184, 50, 168);
+    }
+
+    
 }
