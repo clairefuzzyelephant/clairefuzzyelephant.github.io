@@ -8,6 +8,8 @@ export default function Header() {
   const [showHoverMenu, setShowHoverMenu] = useState(false)
   const [showMobileNav, setShowMobileNav] = useState(false)
 
+  const isBrowser = typeof window !== "undefined"
+
   return (
     <div>
       <div className="web-navbar">
@@ -17,7 +19,9 @@ export default function Header() {
             <div>
               <Link
                 className={
-                  window.location.pathname === "/" ? "highlighted-link" : null
+                  isBrowser && window.location.pathname === "/"
+                    ? "highlighted-link"
+                    : null
                 }
                 to="/"
               >
@@ -29,9 +33,10 @@ export default function Header() {
                 <span onMouseOver={() => setShowHoverMenu(true)}>
                   <Link
                     className={
+                      isBrowser &&
                       window.location.href.includes("/covers") |
-                      window.location.href.includes("/electronic") |
-                      window.location.href.includes("/classical")
+                        window.location.href.includes("/electronic") |
+                        window.location.href.includes("/classical")
                         ? "highlighted-link"
                         : null
                     }
@@ -59,7 +64,7 @@ export default function Header() {
             <div>
               <Link
                 className={
-                  window.location.href.includes("/dance")
+                  isBrowser && window.location.href.includes("/dance")
                     ? "highlighted-link"
                     : null
                 }
@@ -71,7 +76,7 @@ export default function Header() {
             <div>
               <Link
                 className={
-                  window.location.href.includes("/blog")
+                  isBrowser && window.location.href.includes("/blog")
                     ? "highlighted-link"
                     : null
                 }
@@ -95,7 +100,9 @@ export default function Header() {
             <div>
               <Link
                 className={
-                  window.location.pathname === "/" ? "highlighted-link" : null
+                  isBrowser && window.location.pathname === "/"
+                    ? "highlighted-link"
+                    : null
                 }
                 to="/"
               >
@@ -122,7 +129,7 @@ export default function Header() {
             <div>
               <Link
                 className={
-                  window.location.href.includes("/dance")
+                  isBrowser && window.location.href.includes("/dance")
                     ? "highlighted-link"
                     : null
                 }
@@ -134,7 +141,7 @@ export default function Header() {
             <div>
               <Link
                 className={
-                  window.location.href.includes("/blog")
+                  isBrowser && window.location.href.includes("/blog")
                     ? "highlighted-link"
                     : null
                 }

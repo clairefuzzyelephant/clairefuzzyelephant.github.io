@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa"
 
 const Footer = () => (
   <div className="footer">
-    <a href="mailto:clairecheng88@gmail.com">clairecheng88@gmail.com</a>
+    <a href="mailto:ccheng00@alum.mit.edu">ccheng00@alum.mit.edu</a>
     &nbsp;&nbsp;
     <a target="_blank" href="https://www.youtube.com/marniescastle">
       <FaYoutube />
