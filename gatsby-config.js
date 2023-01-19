@@ -10,6 +10,7 @@
 module.exports = {
   siteMetadata: {
     title: `Personal Site`,
+    author: ``,
   },
   plugins: [
     `gatsby-plugin-image`,
