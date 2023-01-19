@@ -11,6 +11,7 @@ module.exports = {
   siteMetadata: {
     title: `Personal Site`,
     author: ``,
+    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
     `gatsby-plugin-image`,
